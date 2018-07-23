@@ -1,6 +1,6 @@
 # Curso de Docker
 ## Que es Docker
-* Virtualización a niveñ de S.O.
+* Virtualización a nivel de S.O.
 * Aislamiento de recurso a nivel de Kernel (cgroups, namespaces).
 * Flexibilidad y portabilidad.
 * Enfocado a sistemas altemente distribuidos.
@@ -27,3 +27,18 @@ El registro de docker es un servicio que permite almacenar imágenes.
 * Instancia de una imagen.
 * Es un directorio dentro del sistema, similar a los jail root.
 * Pueden ser: ejecutados, reiniciados, parados entre otros.
+
+## Construir imagenes propias
+* Crear y configurar un fichero Dockerfile
+* [Referencia de docker file](https://docs.docker.com/engine/reference/builder/#dockerfile-reference)
+* Construir la imágen con el comando docker build
+
+## Docker networking
+Docker por defecto crea 3 tipos de redes:
+* bridge (driver bridge). Red por defecto
+* host (driver overlay)
+* none
+
+``` [powershell]
+docker network ls
+ ```
